@@ -487,7 +487,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {92.418075,92.418075,1616.161616,95.675436}  // default steps per unit for Ultimaker
-#define DEFAULT_AXIS_STEPS_PER_UNIT {3200/34.544,3200/34.544,1600,104.00}
+//#define DEFAULT_AXIS_STEPS_PER_UNIT {3200/34.544,3200/34.544,1600,104.00} // M150 stock config
+#define DEFAULT_AXIS_STEPS_PER_UNIT {3200/34.544,3200/34.544,1600,836} // Titan Extruder
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -695,7 +696,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
